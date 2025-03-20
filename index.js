@@ -91,7 +91,7 @@ app.post('/api/persons', (request, response) => {
     response.json(person)
 })
 
-app.use(unknownEndpoint)
+// app.use(unknownEndpoint)
 
 const PORT = process.env.PORT || 3002
 app.listen(PORT, () => {
