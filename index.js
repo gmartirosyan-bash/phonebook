@@ -3,6 +3,7 @@ const morgan = require('morgan')
 const app = express()
 
 app.use(express.json())
+app.use(express.static('dist'))
 
 const unknownEndpoint = (request, response) => {
     response.status(404).send('<h1>error: unknown endpoint</h1>')
